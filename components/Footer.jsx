@@ -14,22 +14,32 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h5>☀ Solar &amp; Energie</h5>
+            <h5>☀ Photovoltaik</h5>
             <ul>
               <li><Link href="/photovoltaik">Photovoltaik</Link></li>
               <li><Link href="/photovoltaik/stromspeicher">Stromspeicher</Link></li>
               <li><Link href="/photovoltaik/wallbox">Wallbox &amp; E-Auto</Link></li>
-              <li><Link href="/gas-strom">Gas &amp; Strom</Link></li>
-              <li><Link href="/gas-strom/oekostrom">Ökostrom &amp; Bio-Gas</Link></li>
             </ul>
           </div>
           <div>
-            <h5>🌡 Wärme &amp; Internet</h5>
+            <h5>🌡 Wärmepumpe</h5>
             <ul>
               <li><Link href="/waermepumpe">Wärmepumpe</Link></li>
-              <li><Link href="/waermepumpe/foerderung">WP-Förderung</Link></li>
+              <li><Link href="/waermepumpe/foerderung">Förderung 2026</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5>🌐 Glasfaser</h5>
+            <ul>
               <li><Link href="/glasfaser">Glasfaser</Link></li>
               <li><Link href="/glasfaser/telekommunikation">Telekommunikation</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5>🔥 Gas &amp; Strom</h5>
+            <ul>
+              <li><Link href="/gas-strom">Gas &amp; Strom</Link></li>
+              <li><Link href="/gas-strom/oekostrom">Ökostrom &amp; Bio-Gas</Link></li>
             </ul>
           </div>
           <div>
