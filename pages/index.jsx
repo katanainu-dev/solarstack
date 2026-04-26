@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 import ScrollReveal, { DropLetters } from '../components/ScrollReveal'
-import SolarAssembly from '../components/SolarAssembly'
 
 // Energy system data
 const FLOW_MAP = {
@@ -143,9 +142,6 @@ export default function Home() {
           <a href="#gas-strom" className="fs-item"><span className="fs-icon">🔥</span><span className="fs-text">Gas &amp; Strom</span></a>
         </div>
       </div>
-
-      {/* ============ Solar Assembly Scroll Scene ============ */}
-      <SolarAssembly />
 
       {/* ============ USP ============ */}
       <section>

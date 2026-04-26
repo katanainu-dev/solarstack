@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import ScrollReveal, { DropLetters } from '../components/ScrollReveal'
-import SolarAssembly from '../components/SolarAssembly'
 
 export default function Photovoltaik() {
   const [openFaq, setOpenFaq] = useState(null)
@@ -79,9 +78,6 @@ export default function Photovoltaik() {
           </div>
         </div>
       </section>
-
-      {/* Solar Assembly Scroll Scene */}
-      <SolarAssembly />
 
       {/* How it works */}
       <section id="funktionsweise" className="products">
