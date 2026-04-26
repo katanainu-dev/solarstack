@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
+import ScrollReveal, { DropLetters } from '../components/ScrollReveal'
+import SolarAssembly from '../components/SolarAssembly'
 
 // Energy system data
 const FLOW_MAP = {
@@ -111,8 +113,10 @@ export default function Home() {
             <span>Persönliche Beratung</span>
           </div>
           <span className="eyebrow" style={{ background: 'rgba(255,214,10,.18)', color: 'var(--accent)' }}>⚡ ALLES AUS EINER HAND</span>
-          <h1>Ihre Energiezukunft beginnt hier</h1>
-          <p>Mit Solarstack werden Sie unabhängig von steigenden Strompreisen – Photovoltaik und Wärmepumpe komplett aus einer Hand, von Beratung bis Installation.</p>
+          <h1><DropLetters text="Ihre Energiezukunft" /><br /><DropLetters text="beginnt hier" delay={0.5} /></h1>
+          <ScrollReveal variant="fadeUp" delay={0.9} duration={0.9}>
+            <p>Mit Solarstack werden Sie unabhängig von steigenden Strompreisen – Photovoltaik und Wärmepumpe komplett aus einer Hand, von Beratung bis Installation.</p>
+          </ScrollReveal>
           <div className="hero-cta">
             <Link href="/kontakt" className="btn btn-primary">Jetzt Ersparnis berechnen →</Link>
             <a href="#produkte" className="btn btn-secondary">▶ Mehr erfahren</a>
@@ -140,14 +144,19 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ============ Solar Assembly Scroll Scene ============ */}
+      <SolarAssembly />
+
       {/* ============ USP ============ */}
       <section>
         <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Warum Solarstack</span>
-            <h2>Energie endlich günstig</h2>
-            <p>Über 120.000 zufriedene Haushalte vertrauen uns bereits. Regional, persönlich und zu fairen Konditionen.</p>
-          </div>
+          <ScrollReveal variant="drop" duration={0.9}>
+            <div className="section-head">
+              <span className="eyebrow">Warum Solarstack</span>
+              <h2><DropLetters text="Energie endlich günstig" /></h2>
+              <p>Über 120.000 zufriedene Haushalte vertrauen uns bereits. Regional, persönlich und zu fairen Konditionen.</p>
+            </div>
+          </ScrollReveal>
           <div className="usp-photo-grid">
             <div className="usp-photo-card">
               <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Installateure-Team" />
@@ -648,6 +657,7 @@ export default function Home() {
 
       {/* ============ ROW 1: PV + WP Synergie ============ */}
       <section className="smart-section">
+        <ScrollReveal variant="slideLeft" duration={1.0}>
         <div className="container split-grid">
           <div>
             <span className="marker">Smart kombinieren</span>
@@ -664,10 +674,12 @@ export default function Home() {
             <img src="/images/pv-fam.png" alt="Familie vor Haus mit Solaranlage" className="section-img" />
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* ============ ROW 2: Wärmepumpe Detail ============ */}
       <section className="deep-section">
+        <ScrollReveal variant="slideRight" duration={1.0}>
         <div className="container split-grid">
           <div>
             <img src="/images/wp-fam.png" alt="Familie mit Wärmepumpe" className="section-img" />
@@ -684,10 +696,12 @@ export default function Home() {
             <Link href="/waermepumpe" className="btn btn-primary" style={{ marginTop: '20px' }}>Mehr zur Wärmepumpe →</Link>
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* ============ ROW 3: Gas & Strom ============ */}
       <section id="gas-strom" className="smart-section">
+        <ScrollReveal variant="slideLeft" duration={1.0}>
         <div className="container split-grid">
           <div>
             <span className="eyebrow">Gas &amp; Strom</span>
@@ -704,10 +718,12 @@ export default function Home() {
             <img src="/images/stromrechnung.png" alt="Gas und Strom Tarif wechseln sparen" className="section-img" />
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* ============ ROW 4: Glasfaser ============ */}
       <section className="deep-section">
+        <ScrollReveal variant="slideRight" duration={1.0}>
         <div className="container split-grid">
           <div>
             <img src="/images/app-fam2.png" alt="Familie mit Glasfaser Internet Smart Home" className="section-img" />
@@ -724,6 +740,7 @@ export default function Home() {
             <Link href="/glasfaser" className="btn btn-primary" style={{ marginTop: '20px' }}>Mehr zu Glasfaser →</Link>
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* ============ PROCESS ============ */}

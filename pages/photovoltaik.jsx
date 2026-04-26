@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
+import ScrollReveal, { DropLetters } from '../components/ScrollReveal'
+import SolarAssembly from '../components/SolarAssembly'
 
 export default function Photovoltaik() {
   const [openFaq, setOpenFaq] = useState(null)
@@ -42,8 +44,10 @@ export default function Photovoltaik() {
       <header className="hero subhero">
         <div className="container hero-content">
           <span className="eyebrow">☀ PHOTOVOLTAIK</span>
-          <h1>Ihr eigener<br />Solarstrom</h1>
-          <p>Premium-Module mit 30 Jahren Garantie, bis zu 70 % weniger Stromkosten und Installation in nur 6 Wochen. Wir planen, liefern und installieren Ihre Anlage komplett.</p>
+          <h1><DropLetters text="Ihr eigener" /><br /><DropLetters text="Solarstrom" delay={0.4} /></h1>
+          <ScrollReveal variant="fadeUp" delay={0.9}>
+            <p>Premium-Module mit 30 Jahren Garantie, bis zu 70 % weniger Stromkosten und Installation in nur 6 Wochen. Wir planen, liefern und installieren Ihre Anlage komplett.</p>
+          </ScrollReveal>
           <div className="hero-cta">
             <Link href="/kontakt" className="btn btn-primary">Kostenloses Angebot →</Link>
             <a href="#funktionsweise" className="btn btn-secondary">▶ Wie funktioniert PV?</a>
@@ -75,6 +79,9 @@ export default function Photovoltaik() {
           </div>
         </div>
       </section>
+
+      {/* Solar Assembly Scroll Scene */}
+      <SolarAssembly />
 
       {/* How it works */}
       <section id="funktionsweise" className="products">
