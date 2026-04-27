@@ -162,7 +162,7 @@ export default function Home() {
               <p>Unsere qualifizierten und regionalen Handwerker kommen zu Ihnen, um Ihre Solaranlage zu installieren.</p>
             </div>
             <div className="usp-photo-card">
-              <img src="/images/hero-haus-solar-komplett.png" alt="Haus mit Solar, Wärmepumpe und E-Auto" />
+              <ScrollFrames frameCount={50} basePath="/scroll-frames-haus/f" alt="Haus mit Solar, Wärmepumpe und E-Auto" aspectRatio="1/1" borderRadius={12} />
               <div className="usp-check">✓</div>
               <h3>5-in-1 Komplettpaket</h3>
               <p>Solaranlage, Wärmepumpe, Energiemanager, Speicher und Wallbox perfekt kombiniert.</p>
@@ -653,9 +653,6 @@ export default function Home() {
       </section>
 
       {/* ============ ROW 1: PV + WP Synergie ============ */}
-      {/* Scroll-driven frame sequence */}
-      <ScrollFrames frameCount={60} basePath="/scroll-frames/f" alt="Familie vor Haus mit Solaranlage und Wärmepumpe" height="220vh" />
-
       <section className="smart-section">
         <ScrollReveal variant="slideLeft" duration={1.0}>
         <div className="container split-grid">
@@ -671,7 +668,7 @@ export default function Home() {
             <Link href="/kontakt" className="btn btn-primary" style={{ marginTop: '20px' }}>Jetzt Ersparnis berechnen →</Link>
           </div>
           <div>
-            <img src="/images/pv-fam.png" alt="Familie vor Haus mit Solaranlage" className="section-img" />
+            <ScrollFrames frameCount={60} basePath="/scroll-frames/f" alt="Familie vor Haus mit Solaranlage" className="section-img" />
           </div>
         </div>
         </ScrollReveal>
@@ -682,7 +679,7 @@ export default function Home() {
         <ScrollReveal variant="slideRight" duration={1.0}>
         <div className="container split-grid">
           <div>
-            <img src="/images/wp-fam.png" alt="Familie mit Wärmepumpe" className="section-img" />
+            <ScrollFrames frameCount={60} basePath="/scroll-frames-wp/f" alt="Familie mit Wärmepumpe" className="section-img" />
           </div>
           <div>
             <span className="eyebrow">Wärmepumpen</span>
@@ -726,7 +723,7 @@ export default function Home() {
         <ScrollReveal variant="slideRight" duration={1.0}>
         <div className="container split-grid">
           <div>
-            <img src="/images/app-fam2.png" alt="Familie mit Glasfaser Internet Smart Home" className="section-img" />
+            <ScrollFrames frameCount={60} basePath="/scroll-frames-gf/f" alt="Familie mit Glasfaser Internet Smart Home" className="section-img" />
           </div>
           <div>
             <span className="eyebrow">Glasfaser</span>
