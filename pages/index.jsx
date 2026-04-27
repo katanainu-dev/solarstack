@@ -777,33 +777,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ VIDEO + TESTIMONIAL ============ */}
-      <section className="video-testi-section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Kundenstimme</span>
-            <h2>Was unsere Kunden sagen</h2>
-          </div>
-          <div className="vt-grid">
-            <VideoThumb />
-            <div className="vt-quote-side">
-              <div className="vt-stars">★★★★★</div>
-              <blockquote>Vom ersten Besuch durchgehend richtig gut angefühlt</blockquote>
-              <p>Vom Erstkontakt bis die Module auf dem Dach lagen, sind nur rund drei Wochen vergangen. Heute versorgt die PV-Anlage unsere Wärmepumpe mit Strom, senkt die laufenden Kosten spürbar – und ich kann alles bequem über das Tablet steuern.</p>
-              <div className="vt-meta">
-                <img className="vt-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80" alt="Dominik W.D." />
-                <div className="vt-meta-text"><strong>Dominik W. D.</strong><span>12 kWp PV-Anlage + 9,2 kW Wärmepumpe</span></div>
-              </div>
-              <div className="vt-badges">
-                <span className="vt-badge">✓ 12 kWp Photovoltaik</span>
-                <span className="vt-badge">✓ 9,6 kWh Speicher</span>
-                <span className="vt-badge">✓ 9,2 kW Wärmepumpe</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ============ TESTIMONIALS ============ */}
       <section className="testimonials">
         <div className="container">
