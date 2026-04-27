@@ -712,7 +712,7 @@ export default function Home() {
             <Link href="/kontakt" className="btn btn-primary" style={{ marginTop: '20px' }}>Jetzt Tarif prüfen →</Link>
           </div>
           <div>
-            <img src="/images/stromrechnung.png" alt="Gas und Strom Tarif wechseln sparen" className="section-img" />
+            <ScrollFrames frameCount={40} basePath="/scroll-frames-gas/f" alt="Gas und Strom Tarif wechseln sparen" className="section-img" />
           </div>
         </div>
         </ScrollReveal>
