@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 import ScrollReveal, { DropLetters } from '../components/ScrollReveal'
+import ScrollFrames from '../components/ScrollFrames'
 
 // Energy system data
 const FLOW_MAP = {
@@ -652,6 +653,9 @@ export default function Home() {
       </section>
 
       {/* ============ ROW 1: PV + WP Synergie ============ */}
+      {/* Scroll-driven frame sequence */}
+      <ScrollFrames frameCount={60} basePath="/scroll-frames/f" alt="Familie vor Haus mit Solaranlage und Wärmepumpe" height="220vh" />
+
       <section className="smart-section">
         <ScrollReveal variant="slideLeft" duration={1.0}>
         <div className="container split-grid">
